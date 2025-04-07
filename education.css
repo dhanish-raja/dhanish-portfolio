@@ -1,0 +1,134 @@
+.education-section {
+    background: linear-gradient(to right, #1e1e60, #0f70b7);
+    padding: 40px 20px;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  
+  .timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+  
+  .timeline-item {
+    padding: 10px 20px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: white;
+    border: 3px solid #1e1e60;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-item.right::after {
+    left: -10px;
+  }
+  
+  .content-box {
+    background-color: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    overflow: hidden;
+    max-height: 130px;
+    transition: max-height 0.4s ease;
+  }
+  
+  .content-box h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #1e1e60;
+  }
+  
+  .content-box .more {
+    display: none;
+  }
+  
+  .toggle-btn {
+    margin-top: 8px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .content-box.expanded {
+    max-height: 400px;
+  }
+  
+  .content-box.expanded .more {
+    display: block;
+  }
+  
+  /* Adjust gaps */
+  .timeline-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive for small devices */
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 100%;
+      left: 0 !important;
+      padding-left: 40px;
+      padding-right: 25px;
+    }
+  
+    .timeline-container::after {
+      left: 20px;
+    }
+  
+    .timeline-item::after {
+      left: 10px;
+    }
+  }
+  

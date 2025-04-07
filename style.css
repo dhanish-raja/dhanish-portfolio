@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+    color: #00ffee;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #00ffee;
+  }
+  
+  .hero-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url('stars-1869692.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 4rem 6rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 90%;
+  }
+  
+  .overlay h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  .overlay p {
+    color: #00ffee;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 2.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .about-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom, #1b1f35, #2a3557, #3d4c73);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .section-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ecf0f1;
+    margin-bottom: 3rem;
+  
+    /* Hover animation setup */
+    display: inline-block;
+    transition: transform 0.4s ease;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .section-heading:hover {
+    transform: translateX(-50%) scale(1.1) translateY(5px);
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #00ffee;
+  
+    /* Hover animation */
+    display: inline-block;
+    transition: transform 0.6s ease;
+  }
+  
+  .about-text h1:hover {
+    transform: translateX(25px);
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #dfe6e9;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-text p:hover {
+    transform: scale(1.02);
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: right;
+    padding-right: 3rem;
+  }
+  
+  .about-image img {
+    max-width: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+  
